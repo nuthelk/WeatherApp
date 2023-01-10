@@ -7,6 +7,8 @@ React, Redux toolkit, axios, tailwind y se consumio una API.
 
 Aplicación construida con VITE.
 
+Clic [**aquí**](https://weather-qcw5zp1mn-nuthelk.vercel.app/) para ver el despliegue.
+
 
 ### Pre-requisitos 📋
 
