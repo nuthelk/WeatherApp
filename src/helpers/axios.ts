@@ -1,9 +1,11 @@
 import axios from "axios";
 
+const apiTimeKey = import.meta.env.VITE_API_TIME_KEY
+
 export const getTime = axios.create({
-    baseURL: 'https://timezone.abstractapi.com/v1/current_time/?api_key=849f6349353c418c9a44d1ccf8808ab2&location='
+    baseURL: `https://timezone.abstractapi.com/v1/current_time/?api_key=${apiTimeKey}&location=`
 })
 
 export const getWeatherData = axios.create({
-    baseURL: 'api.openweathermap.org/data/2.5/forecast?q='
+    baseURL: 'https://api.openweathermap.org/data/2.5/'
 })

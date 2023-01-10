@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ChangeEvent, FormEvent } from 'react'
 import { useDispatch } from 'react-redux';
 import { changeStateConvert } from '../redux/slices/openWeatherSlice';
 
@@ -7,8 +7,8 @@ const Switch = () => {
     
     const dispatch = useDispatch()
 
-    const handleChange = (e) => {
-        dispatch(changeStateConvert(e.target.checked))
+    const handleChange = (e:FormEvent<HTMLLabelElement>) => {
+        dispatch(changeStateConvert((e.target as HTMLInputElement).checked))
     }
     
 
